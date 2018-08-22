@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.version          = '0.0.12'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC
+
 A new flutter plugin project.
                        DESC
   s.homepage         = 'http://example.com'
@@ -15,8 +16,11 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'GoogleMaps'
+  s.dependency 'GoogleMaps', '2.7.0'
   s.compiler_flags = '-fno-modules'
   s.ios.deployment_target = '8.0'
+
+  s.static_framework = true
+
 end
 
